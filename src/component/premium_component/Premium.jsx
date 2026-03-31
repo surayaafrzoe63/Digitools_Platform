@@ -51,7 +51,7 @@ const [newCards,setNewCards]=useState([]);
         setNewCards={setNewCards}
         >
         </PremiumCard>   )}
-    </div> : <Carts newCards={newCards}></Carts>}
+    </div> : <Carts newCards={newCards} setNewCards={setNewCards}></Carts>}
 
 
     </div>
