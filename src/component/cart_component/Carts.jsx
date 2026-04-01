@@ -1,4 +1,5 @@
 import React from 'react';
+import { toast } from 'react-toastify';
 
 
 const Carts = ({newCards ,setNewCards}) => {
@@ -7,10 +8,16 @@ const Carts = ({newCards ,setNewCards}) => {
  const prices=totalPrice.toFixed(1)
 
 const handelClick=()=>{
+  toast.success("Successfully Proceed!")
    setNewCards([])
+   
 }
   
- 
+ const cardFilter=(card)=>{
+  const filteredArray=newCards.filter(c=>c.id!==card.id)
+  setNewCards(filteredArray)
+toast.success(`${card.name} deleted`)
+ }
 
 
 //  const{name,description,price,period,tagType,features,icon}=card;
@@ -47,7 +54,7 @@ const handelClick=()=>{
       </div>
      </div>
       <div>
-        <button className='btn text-red-500'>remove</button>
+        <button className='btn text-red-500 rounded-xl' onClick={()=>cardFilter(card)}>remove</button>
       </div>
      </div>)}
      </div>

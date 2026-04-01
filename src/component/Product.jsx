@@ -10,7 +10,7 @@ const Product = () => {
       </div>
 
 
-      <div className='flex justify-between gap-5  pt-8'>
+      <div className='grid md:grid-cols-3 justify-center gap-5  pt-8'>
 
                    {/* card 1111111111111 */}
         <div className='p-7 shadow bg-white h-92 w-92 rounded-2xl'>
@@ -28,7 +28,7 @@ const Product = () => {
         <div className='p-7 shadow bg-white h-92 w-92 rounded-2xl'>
           <div className=' flex justify-end'><p  className='rounded-full bg-linear-to-r from-[#4F39F6] to-[#9514FA] flex justify-center text-white items-center w-10 h-10'>02</p></div>
           
-          <div className='rounded-full bg-linear-to-r from-[#bfbbe0] to-[#c3a7d7] p-2 inline-block'><img className=' object-cover rounded-full w-12 h-12' src="/assest_component/assets/user.png" alt="" /></div>
+          <div className='rounded-full mx-auto flex justify-center items-center bg-linear-to-r from-[#bfbbe0] to-[#c3a7d7] p-2 w-15 h-15 '><img className='  w-8 h-8 items-center ' src="/assest_component/assets/rocket.png" alt="" /></div>
          <div className='space-y-5 mt-4'>
             <h3 className='text-2xl font-bold'>Start Creating</h3>
             <p className='text-[#627382]'>Browse our catalog and select the toolsthat fit your needs.</p>

@@ -2,14 +2,14 @@ import React, { use, useState } from 'react';
 import PremiumCard from './PremiumCard';
 import Carts from '../cart_component/Carts';
 
-const Premium = ({premiumFetch,count,setCount}) => {
+const Premium = ({premiumFetch,count,setCount,newCards,setNewCards}) => {
   const premiumTools=use(premiumFetch);
   console.log(premiumTools)
 
 const [colorChange,setColorChange]=useState("Products")
 
 // carts er jonoo
-const [newCards,setNewCards]=useState([]);
+// const [newCards,setNewCards]=useState([]);
 
   return (
     <div className='w-10/12 mx-auto p-5 mt-16'>
@@ -35,13 +35,13 @@ const [newCards,setNewCards]=useState([]);
 
 
  <button onClick={()=>setColorChange("Cart")}
- className={`w-40 p-3 rounded-full shadow ${colorChange==="Cart"?"bg-linear-to-r from-[#4F39F6] to-[#9514FA]  text-white":"bg-base-100"}`}>Cart({count})</button>
+ className={`w-40 p-3 rounded-full shadow ${colorChange==="Cart"?"bg-linear-to-r from-[#4F39F6] to-[#9514FA]  text-white":"bg-base-100"}`}>{`cart(${newCards.length})`}</button>
   
 </div>
 
 
 
-    {colorChange==="Products"? <div className='grid grid-cols-3 gap-3 items-center mt-7'>
+    {colorChange==="Products"? <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-3 items-center justify-center mt-7'>
       {premiumTools.map(premium=> <PremiumCard 
       key={premium.id}
         premium={premium} 

@@ -1,7 +1,8 @@
 import { Check } from 'lucide-react';
 import React, { useState } from 'react';
+import { toast } from 'react-toastify';
 
-const PremiumCard = ({premium,count,setCount,newCards,setNewCards}) => {
+const PremiumCard = ({premium,newCards,setNewCards}) => {
   console.log(premium)
   const{name,description,price,period,tagType,features,icon}=premium;
 
@@ -9,8 +10,15 @@ const [buyNow,setBuyNow]=useState(false)
 
 const handeler=()=>{
   setBuyNow(true);
-  setCount(count+1);
+
+  const isFound=newCards.find(item=>item.id===premium.id)
+  if(isFound){
+    toast.error(`${premium.name} already in cart!`)
+    return
+  }
+ 
   setNewCards([...newCards,premium])
+  toast.success(`${premium.name} added to cart.`)
 }
   return (
 
@@ -18,7 +26,7 @@ const handeler=()=>{
 
     <div>
       <div className="card w-96 bg-base-100 shadow-sm  ">
-  <div className="card-body  flex flex-col flex-1">
+  <div className="card-body  flex flex-col ">
 
        <div className='flex justify-end'>
          <span className={`badge badge-xs p-2.5 rounded-full font-bold flex justify-end
