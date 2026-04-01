@@ -25,7 +25,7 @@ const handeler=()=>{
 
 
     <div>
-      <div className="card w-96 bg-base-100 shadow-sm  ">
+      <div className="card  bg-base-100 shadow-sm  ">
   <div className="card-body  flex flex-col ">
 
        <div className='flex justify-end'>
@@ -51,8 +51,8 @@ const handeler=()=>{
     </div>
 
     <div className="mt-6">
-      <button className="btn bg-linear-to-r from-[#4F39F6] to-[#9514FA] btn-block rounded-full text-white " onClick={handeler}  >
-        {buyNow?"Buy":"Buy Now"}</button>
+      <button className={`btn ${buyNow?"bg-green-500":"bg-linear-to-r from-[#4F39F6] to-[#9514FA]"} btn-block rounded-full text-white `} onClick={handeler}  >
+        {buyNow?"Added":"Buy Now"}</button>
     </div>
   </div>
 </div>

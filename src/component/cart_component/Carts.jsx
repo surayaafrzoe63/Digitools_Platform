@@ -57,17 +57,23 @@ toast.success(`${card.name} deleted`)
         <button className='btn text-red-500 rounded-xl' onClick={()=>cardFilter(card)}>remove</button>
       </div>
      </div>)}
-     </div>
-    }
-    
 
-    <div className='flex justify-between p-3 pt-5'>
-       <h3>total</h3>
-       <p>{prices}</p>
+      <div className='flex justify-between p-3 pt-5'>
+       <h3 className='text-xl'>total</h3>
+       <p className='text-xl'>${prices}</p>
     </div>
+
     <div className='pt-5'>
       <button className=' bg-linear-to-r from-[#4F39F6] to-[#9514FA] btn-block rounded-full text-white p-3' onClick={handelClick}>Proceed to Checkout</button>
       </div>
+     </div>
+
+     
+    }
+    
+
+   
+    
     </div>
   );
 };

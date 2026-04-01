@@ -2,13 +2,13 @@ import { Check } from 'lucide-react';
 import React from 'react';
 
 const PriceCard = ({prices}) => {
-  // console.log(prices)
+  console.log(prices)
   const {title,price,features,description,buttonText,popular}=prices;
   return (
    
-      <div className={`card w-96  ${popular ? "bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white" : "bg-[#F2F2F2]"} shadow-sm rounded-2xl `}>
+      <div className={`card h-full ${popular ? "bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white" : "bg-[#F2F2F2] relative"} shadow-sm rounded-2xl `}>
   <div className="card-body flex flex-col ">
-    {popular&& <span className="badge badge-xs badge-warning">Popular</span>}
+    {popular&& <span className="badge badge-xs badge-warning absolute -top-2  lg:left-38 md:left-27 sm:left-26 left-25 ">most popular</span>}
     <div className='space-y-5'>
     <h2 className="text-3xl font-bold">{title}</h2>
     <p>{description}</p>
@@ -17,7 +17,7 @@ const PriceCard = ({prices}) => {
    
    <div className="flex-1 mt-4 space-y-2">
     
-      {features.map(feature=><div className='flex gap-1.5'>
+      {features.map((feature,i)=><div className='flex gap-1.5 ' key={i}>
         <Check className='w-4 '></Check>
         {feature}
       </div> 

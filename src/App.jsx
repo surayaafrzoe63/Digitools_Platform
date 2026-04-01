@@ -16,14 +16,14 @@ import Transform from './component/Transform'
  
 const premiumFetch=fetch('/premium_Tools.json').then(res=>res.json());
 
+const pricingFetch= fetch ('/pricing.json',{ cache: "no-store" }).then(res=>res.json());
 
 
 
 
 function App() {
  const [newCards,setNewCards]=useState([]);
-  const pricingFetch= fetch ('/pricing.json',{ cache: "no-store" }).then(res=>res.json());
-
+  
   return (
     <>
     <Navbar 

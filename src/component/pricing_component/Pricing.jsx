@@ -5,7 +5,7 @@ const Pricing = ({pricingFetch}) => {
   const pricingPromise=use(pricingFetch)
   console.log(pricingPromise)
   return (
-    <div className='w-10/12 mx-auto p-12'>
+    <div className='w-10/12 mx-auto lg:p-12 p-4 '>
 <div className='text-center mt-4 space-y-6'>
   <h1 className='text-4xl font-bold'>
     Simple, Transparent Pricing

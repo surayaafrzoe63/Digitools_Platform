@@ -12,7 +12,7 @@ const [colorChange,setColorChange]=useState("Products")
 // const [newCards,setNewCards]=useState([]);
 
   return (
-    <div className='w-10/12 mx-auto p-5 mt-16'>
+    <div className=' mx-auto p-5 mt-16'>
       <div className='text-center space-y-5'>
         <h1 className='text-5xl font-bold'>Premium Digital Tools</h1>
         <p className='text-[#627382] text-[16px] font-light'>Choose from our curated collection of premium digital products designed <br /> to boost your productivity and creativity.</p>
@@ -41,7 +41,7 @@ const [colorChange,setColorChange]=useState("Products")
 
 
 
-    {colorChange==="Products"? <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-3 items-center justify-center mt-7'>
+    {colorChange==="Products"? <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-15 items-center justify-center mt-7 max-w-10/12 mx-auto '>
       {premiumTools.map(premium=> <PremiumCard 
       key={premium.id}
         premium={premium} 

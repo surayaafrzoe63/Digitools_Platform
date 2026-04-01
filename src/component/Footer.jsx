@@ -2,8 +2,8 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <div>
-      <footer className=" bg-[#101727] text-[#FFFFFF] p-10 grid md:grid-cols-3 grid-cols-2  lg:grid-cols-[2fr_1fr_1fr_1fr_1fr] gap-3 justify-center items-center ">
+    <div className='bg-[#101727] text-[#FFFFFF]'>
+      <footer className="  p-10 grid md:grid-cols-3 grid-cols-2  lg:grid-cols-[2fr_1fr_1fr_1fr_1fr] gap-3 justify-center items-center ">
         <div className=''>
           <h2 className='text-4xl font-bold'>DigiTools</h2>
           <p className=''>Premium digital tools for creators, <br /> professionals, and businesses. Work smarter <br /> with our suite of powerful tools.</p>
@@ -67,6 +67,11 @@ const Footer = () => {
       </a>
     </div>
   </nav>
+</footer>
+<footer className="footer sm:footer-horizontal footer-center  p-4">
+  <aside>
+    <p>Copyright © {new Date().getFullYear()} - All right reserved by ACME Industries Ltd</p>
+  </aside>
 </footer>
     </div>
   );

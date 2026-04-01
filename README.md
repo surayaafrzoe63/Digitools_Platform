@@ -1,16 +1,32 @@
-# React + Vite
+* Project Name
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+DigiTools Platform 
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+📌 Description
 
-## React Compiler
+DigiTools Platform is a modern web application where users can explore and purchase different digital tools. It provides a smooth user experience with product listing, cart management, and responsive design.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## Expanding the ESLint configuration
+* Technologies Used
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+1. React.js
+2. Tailwind CSS
+3. DaisyUI
+4. JavaScript (ES6+)
+5. React-Toastify
+6. JSON Data
+
+
+
+✨ Key Features
+
+1. Product & Cart System
+* Users can view products and add them to the cart with real-time updates in the navbar.
+
+2. Remove & Checkout Functionality
+* Users can remove individual items or clear the entire cart using the checkout button.
+
+3. Interactive Alerts (Toast Notifications)
+* Toast messages show when products are added, removed, or checkout is completed.

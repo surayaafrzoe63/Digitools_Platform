@@ -4,7 +4,8 @@ import React, { useState } from 'react';
 const Navbar = ({newCards}) => {
   const [open,setOpen]=useState(true)
   return (
-    <div className="navbar bg-base-100 shadow-sm flex justify-between px-9">
+   <div className='bg-base-100 shadow-sm w-full'>
+     <div className="navbar  flex justify-between px-9">
   <div className='flex gap-2  '>
 
      <span className='flex md:hidden'onClick={()=>setOpen(!open)}>
@@ -33,7 +34,7 @@ const Navbar = ({newCards}) => {
   <div className="flex justify-between items-center gap-3">
         <div className="indicator">
           <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" /> </svg>
-       {newCards.length>0 && <span className="badge badge-sm indicator-item text-red-600 font-bold ">{newCards.length}</span>}
+       {newCards.length>0 && <span className="badge badge-sm indicator-item text-white bg-red-600 font-bold ">{newCards.length}</span>}
 
         </div>
       
@@ -43,6 +44,7 @@ const Navbar = ({newCards}) => {
   </div>
   
 </div>
+   </div>
   );
 };
 
