@@ -1,32 +1,61 @@
-* Project Name
 
-DigiTools Platform 
+# 🌐 DigiTools – Premium Digital Tools Platform  
 
+## 📌 Project Overview  
+DigiTools is a modern web-based platform designed to enhance productivity and creativity. It offers a collection of premium digital tools, templates, and services in one place. The goal of this project is to help users work faster and create professional-quality outputs with ease.  
 
-📌 Description
+---
 
-DigiTools Platform is a modern web application where users can explore and purchase different digital tools. It provides a smooth user experience with product listing, cart management, and responsive design.
+## 🖼️ Project Preview  
+![Modern professional website collage](https://copilot.microsoft.com/th/id/BCO.837fee52-1063-4a0e-aa92-14c2a5b3bf96.png)
 
+## ⚙️ Technologies Used  
+- React.js  
+- Tailwind CSS  
+- HTML5  
+- CSS3  
+- JavaScript (ES6)  
+- React Context API  
 
-* Technologies Used
+---
+## ✨ Key Features  
+- Explore premium digital tools easily  
+- Resume builder with ready-to-use templates  
+- Multiple subscription plans (Student, Freelancer, Professional)  
+- Fully responsive and modern UI design  
+- Clean and user-friendly navigation  
+- Pricing and feature comparison section  
+- Free trial option for users  
 
+---
 
-1. React.js
-2. Tailwind CSS
-3. DaisyUI
-4. JavaScript (ES6+)
-5. React-Toastify
-6. JSON Data
+## 📦 Dependencies  
+- react  
+- react-dom  
+- tailwindcss  
+- react-icons  
+-  tailwindcss
+- react-toastify
+- daisyui
+---
 
+## 🚀 Run Locally  
 
+```bash
+git clone https://github.com/your-username/digitools.git
+cd digitools
+npm install
+npm start
+```
 
-✨ Key Features
+Open 👉 http://localhost:3000  
 
-1. Product & Cart System
-* Users can view products and add them to the cart with real-time updates in the navbar.
+---
 
-2. Remove & Checkout Functionality
-* Users can remove individual items or clear the entire cart using the checkout button.
+## 🔗 Live Link  
+🌍 Live Website: https://digitools-platform-react.netlify.app/
 
-3. Interactive Alerts (Toast Notifications)
-* Toast messages show when products are added, removed, or checkout is completed.
+🌍GitHub: https://github.com/surayaafroze
+
+---
+
